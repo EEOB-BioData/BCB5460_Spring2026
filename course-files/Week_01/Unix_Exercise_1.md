@@ -21,7 +21,7 @@ The first time you login to hpc-class, it will respond with "host key not found,
 To add the `SNPs` folder necessary for this exercise to HPC Class on Nova, let's clone the course repository in your directory:
 
 ```
-git clone https://github.com/EEOB-BioData/BCB546_Spring2025
+git clone https://github.com/EEOB-BioData/BCB5460_Spring2026
 ```
 
 Now that you have the data you need, let's do something with it!
