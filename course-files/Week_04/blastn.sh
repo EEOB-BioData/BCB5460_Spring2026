@@ -14,9 +14,9 @@
 
 module load blast-plus
 
-blastx \
-   -db /ptmp/mhufford-lab/Zea_mays.B73_RefGen_v4.pep.all.fa \
+blastn \
+   -subject /ptmp/mhufford-lab/Zea_maysb73v4.AGPv4.dna.toplevel.fa \
    -query /ptmp/mhufford-lab/Zea_maysb73v4.AGPv4.cdna.all.fa \
-   -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend qlen sstart send slen evalue frames sgi staxid" \
+   -outfmt 6 \
    -num_threads 8 \
    -out zm_blastx_zea.out
