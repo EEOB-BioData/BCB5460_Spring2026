@@ -3,13 +3,13 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --time=3:00:00
 #SBATCH --partition=instruction  # class node(s)
-#SBATCH --account=s2024.eeob.546.1   #account to use
-#SBATCH --mail-user=$USER@iastate.edu
+#SBATCH --account=s2026.bcb.546.01   #account to use
+#SBATCH --mail-user=mhufford@iastate.edu
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end
-#SBATCH --job-name=blast-10k
-#SBATCH --error=blastx-10k.%J.err
-#SBATCH --output=blastx10k.%J.out
+#SBATCH --job-name=blast-zea
+#SBATCH --error=blastx-zea.%J.err
+#SBATCH --output=blastx-zea.%J.out
 
 cd $SLURM_SUBMIT_DIR
 
@@ -17,8 +17,8 @@ cd $SLURM_SUBMIT_DIR
 module load blast-plus
 
 blastx \
-   -db /ptmp/arnstrm/bcb590/546x/blast/zm_pep.fa \
-   -query /ptmp/arnstrm/bcb590/546x/blast/Zea_mays_dna_10k.fa \
+   -db /ptmp/mhufford-lab/Zea_mays.B73_RefGen_v4.pep.all.fa \
+   -query /ptmp/mhufford-lab/Zea_maysb73v4.AGPv4.dna.toplevel.fa \
    -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend qlen sstart send slen evalue frames sgi staxid" \
    -num_threads 8 \
    -out zm_blastx_10k.out
