@@ -11,8 +11,6 @@
 #SBATCH --error=blastx-zea.%J.err
 #SBATCH --output=blastx-zea.%J.out
 
-cd $SLURM_SUBMIT_DIR
-
 
 module load blast-plus
 
@@ -21,7 +19,7 @@ blastx \
    -query /ptmp/mhufford-lab/Zea_maysb73v4.AGPv4.dna.toplevel.fa \
    -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend qlen sstart send slen evalue frames sgi staxid" \
    -num_threads 8 \
-   -out zm_blastx_10k.out
+   -out zm_blastx_zea.out
 
 # print job's resource usage
 scontrol show job $SLURM_JOB_ID
