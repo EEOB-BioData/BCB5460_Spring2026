@@ -1,4 +1,4 @@
-##BCB/EEOB546: HPC Exercise
+##BCB/EEOB5460: HPC Exercise
 
 In this exercise we will practice logging into an HPC resource (hpc-class on nova), editing an existing SLURM script using the UNIX editor known as "vi", scheduling a job using this SLURM script, monitoring the job while it runs, and deleting our active job.
 
