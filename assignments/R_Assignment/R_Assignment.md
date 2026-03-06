@@ -106,7 +106,11 @@ Visualize one other feature of the dataset. The choice is up to you!
 Note, that it may be easier to reshape the original data ([make it tidy](https://www.jstatsoft.org/article/view/v059i10)) using the `pivot_longer()` function in the `tidyr` package within the `tidyverse` collection.
 
 ## Common errors
-### Sorting files alphanumberically
+### Using absolute rather than relative paths in your code
+It is highly unlikely another person will have the same file structure as you.
+So use something like `../output/processed_files/$file` rather than `/Users/dlavrov/projects/R-project/ouput/processed_files/$file`
+
+### Sorting files alphanumerically
 e.g., 10 before 2
 
 ### Including additional columns in the output files
