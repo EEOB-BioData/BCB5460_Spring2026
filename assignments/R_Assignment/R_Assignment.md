@@ -11,12 +11,12 @@ The repository should also include the files you generated in part1.
 If you new to "R Markdown", check this [website](https://rmarkdown.rstudio.com/) for more information!
 
 You will be given email addresses of two randomly selected students the class. 
-Please send them the url address of the GitHub (public) repository you've created **by 11:59pm on Friday, March 13**. 
+Please send them the url address of the GitHub (public) repository you've created **by 11:59pm on Sunday, March 15**. 
 CC me on your email.
 In turn, you will receive links to two repositories to review. 
 When you receive a link, **first fork** the repository, **then clone the forked repository** on your computer and write a review inside it named [your lastname]_review.Rmd.
 
-Push your review to the forked repository and submit a Pull request **by 1pm on Monday, March 23**. 
+Push your review to the forked repository and submit a Pull request **by 11:59pm on Monday, March 23**. 
 Accept the pull requests of your reviewers. 
 It's up to you if you make any changes recommended by the reviewers. 
 If you do, create a new R Markdown document with implemented changes and name it accordingly.
