@@ -40,7 +40,7 @@ You will complete this assignment in a **new GitHub repository** and submit that
 ## Details
 
 - Download required files from the course repository:  
-  https://github.com/EEOB-BioData/BCB546_Spring2026/tree/main/assignments/Python
+  https://github.com/EEOB-BioData/BCB5460_Spring2026/tree/main/assignments/Python
 
   Required files:
   - `sequence_translate.py` (this is this instructions and start to the assignment)
