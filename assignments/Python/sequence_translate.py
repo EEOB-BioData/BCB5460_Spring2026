@@ -1,4 +1,4 @@
-######################## BCB 546X: Python Assignment ########################
+######################## BCB 5460: Python Assignment ########################
 
 # Your Mission: Complete and Document a Python Workflow in a Jupyter Notebook #
 
