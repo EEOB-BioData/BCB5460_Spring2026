@@ -1,0 +1,229 @@
+/* @theme eeob */
+
+@import 'default';
+
+/* Base layout */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Aptos", "Segoe UI", "Helvetica", sans-serif;
+  font-size: 30px;
+  padding: 60px 70px;
+  color: #1f2a44;
+  background: #ffffff;
+}
+
+/* Headings */
+h1 {
+  color: #2f446d;
+  font-size: 1.8em;
+  margin-bottom: 0.4em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+h2 {
+  color: #2f446d;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
+h3 {
+  color: #425b8a;
+}
+
+p, li {
+  line-height: 1.1;
+}
+
+ul, ol {
+  margin-top: 0.4em;
+}
+
+strong {
+  color: #1b355f;
+}
+
+/* Slide alignment */
+section.lead,
+section.section {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Title slide */
+section.lead h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.15em;
+}
+
+section.lead h2 {
+  font-size: 1.4em;
+  margin-top: 0;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Section slide */
+section.section {
+  background: #f4f7fb;
+}
+
+section.section h1,
+section.section h2 {
+  margin: 0;
+}
+
+/* ===================== */
+/* CODE BLOCKS */
+/* ===================== */
+
+pre {
+  background: #111827;          /* slightly lighter than black */
+  color: #f1f5f9;
+  border-radius: 14px;
+  padding: 20px;
+  font-size: 0.8em;
+  line-height: 1.35;
+  overflow: auto;
+  border: 1px solid #334155;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  font-family: "Cascadia Code", "Consolas", monospace;
+  font-size: 0.9em;
+}
+
+/* Inline code */
+p code, li code {
+  background: #eef2f7;
+  color: #2f446d;
+  padding: 0.12em 0.32em;
+  border-radius: 6px;
+  border: 1px solid #d8e0ec;
+}
+
+/* ===================== */
+/* SYNTAX HIGHLIGHTING */
+/* ===================== */
+
+/* Keywords (if, else, etc.) */
+pre code .hljs-keyword,
+pre code .token.keyword {
+  color: #93c5fd;
+}
+
+/* Strings (fixed coral/pink) */
+pre code .hljs-string,
+pre code .hljs-attr,
+pre code .hljs-template-tag,
+pre code .hljs-template-variable,
+pre code .token.string,
+pre code .token.attr-value {
+  color: #fb7185;
+}
+
+/* Numbers */
+pre code .hljs-number,
+pre code .hljs-symbol,
+pre code .hljs-bullet,
+pre code .token.number {
+  color: #fcd34d;
+}
+
+/* Functions (THIS FIXES print() and c()) */
+pre code .hljs-title.function_,
+pre code .hljs-function,
+pre code .hljs-built_in,
+pre code .token.function {
+  color: #4ade80 !important;
+}
+
+/* Comments */
+pre code .hljs-comment,
+pre code .hljs-quote,
+pre code .token.comment {
+  color: #cbd5e1;
+}
+
+/* Operators / punctuation */
+pre code .hljs-operator,
+pre code .hljs-punctuation,
+pre code .token.operator,
+pre code .token.punctuation {
+  color: #e5e7eb;
+}
+
+/* ===================== */
+/* OTHER ELEMENTS */
+/* ===================== */
+
+blockquote {
+  border-left: 6px solid #9db4d8;
+  padding-left: 18px;
+  color: #334155;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+th, td {
+  border: 1px solid #cbd5e1;
+  padding: 8px 10px;
+}
+
+th {
+  background: #eaf0f8;
+}
+
+/* Footer */
+section::after {
+  font-size: 0.45em;
+  color: #64748b;
+}
+
+/* ===================== */
+/* TWO COLUMN LAYOUT */
+/* ===================== */
+
+section.twocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+section.twocol h1,
+section.twocol h2 {
+  grid-column: 1 / -1;
+}
+
+section.twocol pre {
+  font-size: 0.7em;
+}
+
+/* Bottom two-column layout */
+.twocol-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Optional: make columns align nicely */
+.twocol-bottom > div {
+  align-self: start;
+}
+
+.small-text {
+  font-size: 0.85em;
+  line-height: 1.1;
+}
